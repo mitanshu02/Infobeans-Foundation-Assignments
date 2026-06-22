@@ -1,0 +1,5 @@
+print("=== Resume ===")
+print(f"Name : \tAlice Johnson")
+print(f"Email :\talice@example.com")
+print(f"Skills :\n\t-Java\n\t-HTML & CSS\n\t-Problem Solving")
+print(f"Experience : 2 years at XYZ Ltd.")

@@ -1,0 +1,5 @@
+print("=== Welcome to Coffee Shop ===")
+print(f"1.\tEspresso\t$3")
+print(f"2.\tLatte   \t$4")
+print(f"3.\tCappuccino\t$5")
+print("===============================")
