@@ -22,10 +22,11 @@ l = len(n)
 temp = n
 d = 1
 
-for i in range(1,l+1):
-    if i == l:
-        d = int(n)%10
-    n = int(n)//10
+# for i in range(1,l+1):
+#     if i == l:
+#         d = int(n)%10
+#     n = int(n)//10
+d = int(n) // (10**(l-1))
 
 if '0' in temp and d != 0:
     print("Duck Number")
