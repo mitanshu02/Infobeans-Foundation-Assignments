@@ -12,3 +12,15 @@ aaabbbccccdddaa
 Output:
 abcda
 '''
+m = input("Input: ")
+l = len(m)
+ans = ""
+
+for i in range(l):
+    if i < l-1:
+        if m[i] != m[i+1]:
+            ans = ans + m[i]
+    else:
+            ans = ans + m[i]
+
+print(ans)

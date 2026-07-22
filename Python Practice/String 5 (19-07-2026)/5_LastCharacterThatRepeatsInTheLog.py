@@ -17,3 +17,14 @@ abccdbefga
 Output:
 a
 '''
+
+m = input("Input: ")
+l = len(m)
+visited = ""
+for i in range(l):
+    if m[i] in visited:
+        ans = m[i]
+    else:
+        visited = visited + m[i]
+
+print(ans)

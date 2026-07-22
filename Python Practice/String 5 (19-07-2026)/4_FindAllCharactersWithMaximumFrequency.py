@@ -13,3 +13,29 @@ aabbbccddd
 Output:
 b d
 '''
+m = input("Input: ")
+l = len(m)
+visited = ""
+maximum = 0
+maxC = ""
+for i in range(l):
+    ch = m[i]
+    count = 0
+    if ch not in visited:
+        for j in range(l): 
+            if ch == m[j]:
+                count += 1
+        if count >= maximum:
+            if count > maximum:
+                maximum = count
+                maxC = ch
+            elif count == maximum:
+                maxC += ch
+    visited = visited + ch
+
+print(*maxC,sep=" ")
+            
+
+
+
+    

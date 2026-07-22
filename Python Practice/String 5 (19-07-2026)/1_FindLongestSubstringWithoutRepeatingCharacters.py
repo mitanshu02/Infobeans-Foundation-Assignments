@@ -13,3 +13,19 @@ Output:
 abc
 '''
 
+n=input("Enter : ")
+ans=""
+
+for i  in range(len(n)):
+    temp=""
+    for j in range(i,len(n)):
+        if n[j]  in temp:
+            
+            break
+        else :
+            temp+=n[j]
+
+    if len(temp)>len(ans):
+        ans=temp
+    
+print(ans)

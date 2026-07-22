@@ -19,3 +19,14 @@ Output:
 madam
 
 '''
+m = input("Input: ").split()
+
+for w in m:
+    for i in range(len(w)//2):
+        if w[i] != w[len(w)-i-1]:
+            break
+    else:
+        print(w)
+        break
+else:
+    print("No Palindrome word found.")

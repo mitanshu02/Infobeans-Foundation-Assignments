@@ -27,4 +27,15 @@ service : 1
 good : 1
 
 '''
+m = input("Input: ").split()
+visited = []
 
+for j in range(len(m)):
+    w = m[j]
+    count = 0
+    if w not in visited:
+        for i in range(j,len(m)):
+                if w == m[i]:
+                    count += 1
+        visited.append(w)
+        print(f"{w} : {count}")

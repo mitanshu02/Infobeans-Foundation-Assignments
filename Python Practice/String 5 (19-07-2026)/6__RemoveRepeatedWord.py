@@ -16,3 +16,14 @@ Output:
 hello team meeting started
 
 '''
+m = input("Input: ")
+l = len(m)
+
+m = m.split()
+cleaned = []
+
+for w in m:
+    if w not in cleaned:
+        cleaned.append(w)
+
+print(" ".join(cleaned))
