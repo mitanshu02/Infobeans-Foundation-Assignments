@@ -44,16 +44,34 @@ Output: Expanded Message: rrrssttttt
 Total Characters: 10
 
 '''
+m = input("Input: ")
+l = len(m)
 
+ans = ""
+
+for i in range(1, l):
+    ch = m[i]
+
+    if '0' <= ch <= '9' and (('a' <= m[i-1] <= 'z') or ('A' <= m[i-1] <= 'Z')):
+
+        if 'A' <= m[i-1] <= 'Z':
+            ans += chr(ord(m[i-1]) + 32) * int(ch)
+        else:
+            ans += m[i-1] * int(ch)
+
+print("Expanded Message:", ans)
+print("Total Characters:", len(ans))
+
+'''
 m = input("Input: ").lower()
 l = len(m)
 ans = ""
 for i in range(l):
     ch = m[i]
-    if '0'<=ch<='9':
+    if '0'<=ch<='9'and ('a'<= m[i-1] <= 'z' or 'a'<= m[i-1] <= 'z'):
         ans = ans + m[i-1]*int(ch)
     else:
         continue
 print(ans)
         
-        
+'''

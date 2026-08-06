@@ -1,6 +1,6 @@
 n = int(input("Input: "))
 
-smallest = 99999999999999999999999
+smallest = 9
 
 for i in range(len(str(n))):
     d = n % 10
