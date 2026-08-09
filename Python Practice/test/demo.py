@@ -1,16 +1,18 @@
 
 s = input("s = ")
-temp = ""
-length = 0
-largest = 0
-for i in range(len(s)):
-    for j in range(i,len(s)):
-        if s[j] not in temp:
-            temp+= s[j]
-        else:
-            print(temp)
-            length = len(temp)
-            if length >= largest:
-                largest = length
-            temp = ""
-            break
+
+c = 0
+count = 0
+for ch in s:
+    if ch == '0':
+        c += 1
+    else:
+        c -= 1
+    if c == 0:
+        count += 1
+        print(count)
+
+# if count != 0:
+#     return count
+# else:
+#     return -1
