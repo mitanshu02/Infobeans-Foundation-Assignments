@@ -132,3 +132,28 @@ Least Frequent: 7
 
 No valid data found
 '''
+n = [int(x) for x in input("Enter entries: ").split()]
+n.sort()
+mf = 0
+mfe = n[0]
+lf = len(n)
+lfe = n[0]
+visited = []
+print("Frequency Count: ")
+for e in n:
+    count = 0
+    if e not in visited:
+        if e<=0:
+            continue 
+        count = n.count(e)
+        print(e,"->",count)
+        if count > mf:
+            mf = count
+            mfe = e
+        if count < lf:
+            lf = count
+            lfe = e
+        visited.append(e)
+
+print(f"Most Frequent: {mfe}")
+print(f"Least Frequent: {lfe}")
