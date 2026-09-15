@@ -8,13 +8,21 @@ ans = ""
 takeFromS1 = True 
 j = 0
 k = 0
-for i in range(len(s1)+len(s2)):
-    if takeFromS1:
+while j<len(s1) or k<len(s2):
+    if j < len(s1) and k<len(s2):
+        if takeFromS1:
+            ans += s1[j]
+            j += 1
+            takeFromS1 = False
+        else:
+            ans += s2[k]
+            k += 1
+            takeFromS1 = True
+    elif j<len(s1):
         ans += s1[j]
         j += 1
-        takeFromS1 = False
     else:
-        ans += s2[k]
+        ans += s1[k]
         k += 1
-        takeFromS1 = True
+
 print(ans)
