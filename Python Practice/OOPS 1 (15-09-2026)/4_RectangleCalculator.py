@@ -10,19 +10,41 @@ Create a class Rectangle with the following attributes:
 
 Create the following methods:
 
-calculate_area() – Calculate the area.
+calculate_area() ï¿½ Calculate the area.
 
-calculate_perimeter() – Calculate the perimeter.
+calculate_perimeter() ï¿½ Calculate the perimeter.
 
-display_result() – Display length, breadth, area, and perimeter.
+display_result() ï¿½ Display length, breadth, area, and perimeter.
 
 Formulas:
 
-Area = Length × Breadth
-Perimeter = 2 × (Length + Breadth)
+Area = Length ï¿½ Breadth
+Perimeter = 2 ï¿½ (Length + Breadth)
 
 Sample data:
 
 Length: 15
 Breadth: 8
 """
+class Rectangle:
+
+    def __init__(self, length, breadth):
+        self.length = length
+        self.breadth = breadth
+
+    def calculate_area(self):
+        return self.length * self.breadth
+
+    def calculate_perimeter(self):
+        return 2 * (self.length + self.breadth)
+
+    def display_result(self):
+        print("Length:", self.length)
+        print("Breadth:", self.breadth)
+        print("Area:", self.calculate_area())
+        print("Perimeter:", self.calculate_perimeter())
+
+
+rectangle = Rectangle(15, 8)
+
+rectangle.display_result()

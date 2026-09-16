@@ -13,16 +13,16 @@ Create a class Car with the following attributes:
 
 Create the following methods:
 
-calculate_mileage() – Calculate kilometres per litre.
+calculate_mileage() ï¿½ Calculate kilometres per litre.
 
-calculate_fuel_cost() – Calculate total fuel cost.
+calculate_fuel_cost() ï¿½ Calculate total fuel cost.
 
-display_trip_details() – Display car and journey details.
+display_trip_details() ï¿½ Display car and journey details.
 
 Formulas:
 
 Mileage = Distance / Fuel Consumed
-Fuel Cost = Fuel Consumed × Petrol Price
+Fuel Cost = Fuel Consumed ï¿½ Petrol Price
 
 Sample data:
 
@@ -32,3 +32,31 @@ Distance: 320 km
 Fuel Consumed: 20 litres
 Petrol Price: 105
 """
+class Car:
+
+    def __init__(self, car_brand, car_model, distance, fuel_consumed, petrol_price):
+        self.car_brand = car_brand
+        self.car_model = car_model
+        self.distance = distance
+        self.fuel_consumed = fuel_consumed
+        self.petrol_price = petrol_price
+
+    def calculate_mileage(self):
+        return self.distance / self.fuel_consumed
+
+    def calculate_fuel_cost(self):
+        return self.fuel_consumed * self.petrol_price
+
+    def display_trip_details(self):
+        print("Car Brand:", self.car_brand)
+        print("Car Model:", self.car_model)
+        print("Distance Travelled:", self.distance, "km")
+        print("Fuel Consumed:", self.fuel_consumed, "litres")
+        print("Petrol Price:", self.petrol_price)
+        print("Mileage:", self.calculate_mileage(), "km/l")
+        print("Fuel Cost:", self.calculate_fuel_cost())
+
+
+car = Car("Maruti", "Swift", 320, 20, 105)
+
+car.display_trip_details()
