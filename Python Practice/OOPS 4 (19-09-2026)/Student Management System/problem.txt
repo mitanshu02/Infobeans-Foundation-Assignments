@@ -1,0 +1,37 @@
+﻿ASSIGNMENT 1 – STUDENT MANAGEMENT SYSTEM
+
+Create a Student class inside:
+models/student.py
+
+ATTRIBUTES:
+- roll_no
+- name
+- marks
+
+IMPORTANT RULES:
+1. Create the class inside the models package.
+2. Write the class in a separate module.
+3. Import the class into main.py.
+4. Create multiple objects.
+5. Store all objects inside a list.
+6. Perform operations on the list of objects.
+7. Take input from the user wherever required.
+8. Do not use dictionaries in place of objects.
+9. Do not use database connectivity.
+10. Display output in a proper format.
+
+TASKS:
+1. Take details of 5 students from the user.
+2. Create a Student object for each student.
+3. Store all Student objects inside a list.
+4. Display all students.
+5. Display students whose marks are greater than 60.
+6. Find the student having the highest marks.
+7. Calculate the average marks of all students.
+
+FOLDER STRUCTURE:
+Student Management System/
+├── models/
+│   ├── __init__.py
+│   └── student.py
+└── main.py

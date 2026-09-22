@@ -1,0 +1,29 @@
+﻿ASSIGNMENT 3 – PRODUCT INVENTORY SYSTEM
+
+Create a Product class inside:
+models/product.py
+
+ATTRIBUTES:
+- product_id
+- product_name
+- price
+- quantity
+
+TASKS:
+1. Take details of 5 products from the user.
+2. Create Product objects.
+3. Store all objects in a list.
+4. Display all products.
+5. Calculate the total value of each product.
+   Total Value = Price × Quantity
+6. Display products whose quantity is less than 10.
+7. Find the product having the highest price.
+8. Calculate total inventory value.
+9. Search a product using Product ID.
+
+FOLDER STRUCTURE:
+Product Inventory System/
+├── models/
+│   ├── __init__.py
+│   └── product.py
+└── main.py

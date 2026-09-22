@@ -1,0 +1,31 @@
+﻿ASSIGNMENT 4 – BANK ACCOUNT SYSTEM
+
+Create an Account class inside:
+models/account.py
+
+ATTRIBUTES:
+- account_no
+- customer_name
+- balance
+
+METHODS:
+- deposit()
+- withdraw()
+- display()
+
+TASKS:
+1. Create 5 Account objects.
+2. Store all Account objects in a list.
+3. Display all accounts.
+4. Search an account using Account Number.
+5. Deposit money into a selected account.
+6. Withdraw money from a selected account.
+7. Display accounts having balance greater than 50,000.
+8. Find the account having the highest balance.
+
+FOLDER STRUCTURE:
+Bank Account System/
+├── models/
+│   ├── __init__.py
+│   └── account.py
+└── main.py

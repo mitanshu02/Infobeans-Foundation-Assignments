@@ -1,0 +1,30 @@
+﻿ASSIGNMENT 7 – MOVIE COLLECTION SYSTEM
+
+Create a Movie class inside:
+models/movie.py
+
+ATTRIBUTES:
+- movie_id
+- movie_name
+- genre
+- rating
+- ticket_price
+
+TASKS:
+1. Take details of 5 movies from the user.
+2. Create Movie objects.
+3. Store all objects in a list.
+4. Display all movies.
+5. Display movies having rating greater than 8.
+6. Display all Action movies.
+7. Find the highest-rated movie.
+8. Search a movie using Movie ID.
+9. Calculate average movie rating.
+10. Display movies whose ticket price is greater than 300.
+
+FOLDER STRUCTURE:
+Movie Collection System/
+├── models/
+│   ├── __init__.py
+│   └── movie.py
+└── main.py

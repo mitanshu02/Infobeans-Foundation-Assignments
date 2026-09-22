@@ -1,0 +1,28 @@
+﻿ASSIGNMENT 5 – BOOK MANAGEMENT SYSTEM
+
+Create a Book class inside:
+models/book.py
+
+ATTRIBUTES:
+- book_id
+- book_name
+- author
+- price
+
+TASKS:
+1. Take details of 5 books from the user.
+2. Create Book objects.
+3. Store all Book objects in a list.
+4. Display all books.
+5. Search a book using Book ID.
+6. Display all books written by a particular author.
+7. Display books whose price is greater than 500.
+8. Find the most expensive book.
+9. Calculate the average price of all books.
+
+FOLDER STRUCTURE:
+Book Management System/
+├── models/
+│   ├── __init__.py
+│   └── book.py
+└── main.py

@@ -1,0 +1,29 @@
+﻿ASSIGNMENT 6 – CUSTOMER MANAGEMENT SYSTEM
+
+Create a Customer class inside:
+models/customer.py
+
+ATTRIBUTES:
+- customer_id
+- customer_name
+- city
+- purchase_amount
+
+TASKS:
+1. Take details of 5 customers.
+2. Create Customer objects.
+3. Store all objects in a list.
+4. Display all customers.
+5. Display customers from a particular city.
+6. Display customers whose purchase amount is greater than 10,000.
+7. Find the customer having the highest purchase amount.
+8. Calculate total sales.
+9. Calculate average purchase amount.
+10. Search a customer using Customer ID.
+
+FOLDER STRUCTURE:
+Customer Management System/
+├── models/
+│   ├── __init__.py
+│   └── customer.py
+└── main.py

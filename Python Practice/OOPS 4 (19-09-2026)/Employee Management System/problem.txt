@@ -1,0 +1,28 @@
+﻿ASSIGNMENT 2 – EMPLOYEE MANAGEMENT SYSTEM
+
+Create an Employee class inside:
+models/employee.py
+
+ATTRIBUTES:
+- employee_id
+- name
+- salary
+- department
+
+TASKS:
+1. Take details of 5 employees from the user.
+2. Create Employee objects.
+3. Store the objects inside a list.
+4. Display all employees.
+5. Display employees whose salary is greater than 40,000.
+6. Display employees who belong to the IT department.
+7. Find the employee having the highest salary.
+8. Calculate total salary of all employees.
+9. Calculate average salary.
+
+FOLDER STRUCTURE:
+Employee Management System/
+├── models/
+│   ├── __init__.py
+│   └── employee.py
+└── main.py
