@@ -19,7 +19,9 @@ def main():
 
         result = process_command(command)
 
-        if result:
+        if isinstance(result, str):
+            speak(result)
+        elif result:
             speak("Action completed.")
         else:
             speak("Sorry, I don't understand that command.")

@@ -16,3 +16,11 @@ def show_commands():
 
     for command, description in COMMANDS.items():
         print(f"{command:<20} - {description}")
+
+def get_commands_text():
+    text = "Available commands are: "
+
+    for command in COMMANDS:
+        text += command + ", "
+
+    return text

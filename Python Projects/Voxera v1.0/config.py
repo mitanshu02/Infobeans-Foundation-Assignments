@@ -5,7 +5,7 @@ WEBSITES = {
     "youtube": "https://www.youtube.com",
     "google": "https://www.google.com",
     "github": "https://github.com",
-    "chatgpt": "https://chatgpt.com",
+    "chat gpt": "https://chatgpt.com",
     "instagram": "https://instagram.com"
 }
 
